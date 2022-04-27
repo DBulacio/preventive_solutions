@@ -4,7 +4,7 @@ body {
     background-color: #ccc;
 }
 .main-logo {
-    width: 5rem;
+    width: 4rem;
 }
 
 /*
@@ -14,7 +14,6 @@ body {
     background-color: rgba(0,0,0,.5);
 }
 .menu {
-    padding-top: .8rem;
     margin-left: 10px;
 }
 .nav-link {
@@ -152,7 +151,7 @@ body {
 .switch {
     position:relative;
     display: inline-block;
-    margin-top: .8rem;
+    margin-top: .3rem;
     width: 90px;
     height: 34px;
 }
