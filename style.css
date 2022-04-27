@@ -1,58 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fcfcfc;
+    background-color: #ccc;
 }
-
 .main-logo {
-    display: block;
-    width: 20rem;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    width: 5rem;
 }
 
-.title {
-    margin-top: 3rem !important;
+/*
+    NAVBAR
+            */
+.navbar {
+    background-color: rgba(0,0,0,.5);
 }
-
-.info {
-    margin-top: 5rem;
+.menu {
+    padding-top: .8rem;
+    margin-left: 10px;
 }
-
-.ball {
-    position: relative;
-    margin-top: 0rem;
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50px;
-    left: 15%;
-    background-color:blue;
-    animation-duration: 3s;
-    animation-name: ball-anim;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
+.nav-link {
+    color: #FFF !important;
 }
-
-@keyframes ball-anim {
-    25% {
-        background-color: orange;
+.myNav:hover {
+    color: #f1f1f1 !important;
+    animation-duration: 5s;
+    animation-name: myNav-anim;
+}
+@keyframes myNav-anim {
+    10% {
+        background-color: rgba(219, 10, 64, 0.5);
+        transform: translateY(6px);
     }
-    33% {
-        width: 2rem;
+    15% {
+        transform: translateY(-2px);
     }
-    50% {
-        background-color: green;
-    }
-    75% {
-        background-color: pink;
+    20% {
+        transform: translateY(0);
     }
     100% {
-        left: 85%;
-        width: .5rem;
-        background-color: transparent;
+        background-color: rgba(219, 10, 64, 0.5);
     }
 }
+#instagram:hover  {
+    color: #E1306C !important;
+}
+#facebook:hover  {
+    color: #4267B2 !important;
+}
+#twitter:hover  {
+    color: #1DA1F2 !important;
+}
+#whatsapp {
+    border: 2px solid #25D366;
+}
+#whatsapp:hover  {
+    background-color: rgba(7, 94, 84, 0.5);
+    color: #25D366 !important;
+    transform: scale(1.05);
+}
+.redes:hover {
+    animation-duration: 5s;
+    animation-name: redes-anim;
+}
+@keyframes redes-anim {
+    20% {
+        transform: scale(1.7) rotate(1turn);
+    }
+    100% {
+        transform: scale(1.7) rotate(1turn);
+    }
+}
+.navbar-redes {
+    margin-right: 3rem;
+}
+@media (max-width: 1100px) {
+    .hide-text-on-mobile {
+        display: none;
+    }
+    #whatsapp {
+        border: none;
+    }
+}
+@media (max-width: 992px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+/*
+    NAVBAR
+            */
 
 /* INSTAGRAM */
 .instagram-btn {
@@ -106,4 +141,85 @@ body {
         width: 70px;
         height: 70px;
     }
+}
+
+/*
+*
+*
+*
+*
+*/
+.switch {
+    position:relative;
+    display: inline-block;
+    margin-top: .8rem;
+    width: 90px;
+    height: 34px;
+}
+  
+.switch input {
+    display: none;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+  
+input:checked+.slider {
+    background-color: #2ab934;
+}
+  
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked+.slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+}
+  
+.on {
+    display: none;
+}
+  
+.on,
+.off {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+  
+input:checked+.slider .on {
+    display: block;
+}
+  
+input:checked+.slider .off {
+    display: none;
 }

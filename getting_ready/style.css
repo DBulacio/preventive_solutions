@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+}
+
+.main-logo {
+    display: block;
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    margin-top: 3rem !important;
+}
+
+.info {
+    margin-top: 5rem;
+}
+
+.ball {
+    position: relative;
+    margin-top: 0rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50px;
+    left: 15%;
+    background-color:blue;
+    animation-duration: 3s;
+    animation-name: ball-anim;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+}
+
+@keyframes ball-anim {
+    25% {
+        background-color: orange;
+    }
+    33% {
+        width: 2rem;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        left: 85%;
+        width: .5rem;
+        background-color: transparent;
+    }
+}
+
+/* INSTAGRAM */
+.instagram-btn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+    box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+}
+#instagram-logo {
+    color: #FFF;
+    font-size: 3rem;
+}
+.instagram-btn:active {
+    animation-duration: 5s;
+    animation-name: clicked;
+}
+/* WHATSAPP */
+.whatsapp-btn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background: #25D366;
+    box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+}
+#whatsapp-logo {
+    color: #FFF;
+    font-size: 3rem;
+}
+.whatsapp-btn:active {
+    animation-duration: 5s;
+    animation-name: clicked;
+}
+
+@keyframes clicked {
+    1% {
+        width: 65px;
+        height: 65px;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+    }
+}
