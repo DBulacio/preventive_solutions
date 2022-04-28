@@ -77,6 +77,11 @@ body {
     }
     #whatsapp {
         border: none;
+        background-color: transparent !important;        
+    }
+    #whatsapp:hover {
+        animation-duration: 5s;
+        animation-name: redes-anim;
     }
 }
 @media (max-width: 992px) {
@@ -88,6 +93,9 @@ body {
     NAVBAR
             */
 
+/*
+    RRSS   
+          */
 /* INSTAGRAM */
 .instagram-btn {
     display: block;
@@ -141,25 +149,22 @@ body {
         height: 70px;
     }
 }
-
 /*
-*
-*
-*
-*
+    RRSS   
+          */
+/*
+*   SWITCH
 */
 .switch {
     position:relative;
     display: inline-block;
     margin-top: .3rem;
-    width: 90px;
+    width: 80px;
     height: 34px;
 }
-  
 .switch input {
     display: none;
-}
-  
+} 
 .slider {
     position: absolute;
     cursor: pointer;
@@ -167,12 +172,19 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ca2222;
+    /* US Flag */
+    background-image:
+        linear-gradient(0deg, #3C3B6E, #3C3B6E),
+        repeating-linear-gradient(180deg,
+            #B22234, #B22234 7.7%, white 7.7%, white 15.4%);
+    background-size: 40% 53.85%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    /* US Flag */
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50px;
-}
-  
+} 
 .slider:before {
     position: absolute;
     content: "";
@@ -180,12 +192,12 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: black;
+    border: 3px white solid;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50px;
 }
-  
 input:checked+.slider {
     background-color: #2ab934;
 }
@@ -195,9 +207,9 @@ input:focus+.slider {
 }
   
 input:checked+.slider:before {
-    -webkit-transform: translateX(55px);
-    -ms-transform: translateX(55px);
-    transform: translateX(55px);
+    -webkit-transform: translateX(47px);
+    -ms-transform: translateX(47px);
+    transform: translateX(47px);
 }
   
 .on {
@@ -206,7 +218,8 @@ input:checked+.slider:before {
   
 .on,
 .off {
-    color: white;
+    color: #000;
+    font-weight: bold;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -222,3 +235,6 @@ input:checked+.slider .on {
 input:checked+.slider .off {
     display: none;
 }
+/*
+*   SWITCH
+*/
