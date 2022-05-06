@@ -21,7 +21,7 @@
     preventivesolutionsmiami@gmail.com <br>
     +1 (786) 719-1538</p>
     <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=1(786)7191538&text=Hello!%20I'd%20like%20some%20information%20please." target="_blank"><i class="fab fa-whatsapp" id="whatsapp-logo"></i></a></button>
-    <button class="instagram-btn"><a href="https://www.instagram.com/prev_solutions_miami/" target="_blank"><i class="fab fa-instagram" id="instagram-logo"></i></a></button>
+    <button class="instagram-btn"><a href="https://www.instagram.com/preventivesolutionsmiami/" target="_blank"><i class="fab fa-instagram" id="instagram-logo"></i></a></button>
     
 </body>
 </html>
