@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #ccc;
+    background-color: #eee !important;
 }
 .main-logo {
-    width: 4rem;
+    width: 8rem;
 }
 
 /*
     NAVBAR
             */
 .navbar {
-    background-color: rgba(0,0,0,.5);
+    background-color: #fff;
 }
 .menu {
     margin-left: 10px;
 }
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234,75,145)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+.custom-toggler.navbar-toggler {
+    border: 2px solid rgba(234,75,145);
+} 
+/* Estilo gral a todos los links del nav */
 .nav-link {
-    color: #FFF !important;
+    color: #000 !important;
 }
 .myNav:hover {
     color: #f1f1f1 !important;
-    animation-duration: 5s;
-    animation-name: myNav-anim;
 }
-@keyframes myNav-anim {
+/* especifico de cada nav-link. Cada uno tiene un color del logo */
+#txt-home:hover {
+    animation-duration: 5s;
+    animation-name: myNav-home-anim;
+}
+@keyframes myNav-home-anim {
     10% {
-        background-color: rgba(219, 10, 64, 0.5);
+        background-color: rgba(100, 197, 224, 1);
         transform: translateY(6px);
     }
     15% {
@@ -36,9 +46,67 @@ body {
         transform: translateY(0);
     }
     100% {
-        background-color: rgba(219, 10, 64, 0.5);
+        background-color: rgba(100, 197, 224, 1);
     }
 }
+#txt-about:hover {
+    animation-duration: 5s;
+    animation-name: myNav-about-anim;
+}
+@keyframes myNav-about-anim {
+    10% {
+        background-color: rgba(239, 120, 20, 1);
+        transform: translateY(6px);
+    }
+    15% {
+        transform: translateY(-2px);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        background-color: rgba(239, 120, 20, 1);
+    }
+}
+#txt-services:hover {
+    animation-duration: 5s;
+    animation-name: myNav-services-anim;
+}
+@keyframes myNav-services-anim {
+    10% {
+        background-color: rgba(104, 180, 45, 1);
+        transform: translateY(6px);
+    }
+    15% {
+        transform: translateY(-2px);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        background-color: rgba(104, 180, 45, 1);
+    }
+}
+#txt-contact:hover {
+    animation-duration: 5s;
+    animation-name: myNav-contact-anim;
+}
+@keyframes myNav-contact-anim {
+    10% {
+        background-color: rgba(234, 75, 145, 1);
+        transform: translateY(6px);
+    }
+    15% {
+        transform: translateY(-2px);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        background-color: rgba(234, 75, 145, 1);
+    }
+}
+/* especifico de cada nav-link. Cada uno tiene un color del logo */
 #instagram:hover  {
     color: #E1306C !important;
 }
@@ -53,7 +121,7 @@ body {
 }
 #whatsapp:hover  {
     background-color: rgba(7, 94, 84, 0.5);
-    color: #25D366 !important;
+    color: #fff !important;
     transform: scale(1.05);
 }
 .redes:hover {
@@ -71,87 +139,10 @@ body {
 .navbar-redes {
     margin-right: 3rem;
 }
-@media (max-width: 1100px) {
-    .hide-text-on-mobile {
-        display: none;
-    }
-    #whatsapp {
-        border: none;
-        background-color: transparent !important;        
-    }
-    #whatsapp:hover {
-        animation-duration: 5s;
-        animation-name: redes-anim;
-    }
-}
-@media (max-width: 992px) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
 /*
     NAVBAR
             */
 
-/*
-    RRSS   
-          */
-/* INSTAGRAM */
-.instagram-btn {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 50px;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
-    box-shadow: 0px 5px 1px rgba(0,0,0,.5);
-}
-#instagram-logo {
-    color: #FFF;
-    font-size: 3rem;
-}
-.instagram-btn:active {
-    animation-duration: 5s;
-    animation-name: clicked;
-}
-/* WHATSAPP */
-.whatsapp-btn {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 100px;
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 50px;
-    background: #25D366;
-    box-shadow: 0px 5px 1px rgba(0,0,0,.5);
-}
-#whatsapp-logo {
-    color: #FFF;
-    font-size: 3rem;
-}
-.whatsapp-btn:active {
-    animation-duration: 5s;
-    animation-name: clicked;
-}
-
-@keyframes clicked {
-    1% {
-        width: 65px;
-        height: 65px;
-    }
-    100% {
-        width: 70px;
-        height: 70px;
-    }
-}
-/*
-    RRSS   
-          */
 /*
 *   SWITCH
 */
@@ -193,7 +184,6 @@ body {
     left: 4px;
     bottom: 4px;
     background-color: black;
-    border: 3px white solid;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50px;
@@ -238,3 +228,85 @@ input:checked+.slider .off {
 /*
 *   SWITCH
 */
+
+
+/****
+    MEDIA QUERIES 
+                 ****/
+@media (max-width: 1100px) {
+    .hide-text-on-mobile {
+        display: none;
+    }
+    #whatsapp {
+        border: none;
+        background-color: transparent !important;        
+    }
+    #whatsapp:hover {
+        animation-duration: 5s;
+        animation-name: redes-anim;
+    }
+}
+@media (max-width: 992px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    /*
+        RRSS   
+            */
+    /* INSTAGRAM */
+    .instagram-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+    }
+    #instagram-logo {
+        color: #FFF;
+        font-size: 3rem;
+    }
+    .instagram-btn:active {
+        animation-duration: 5s;
+        animation-name: clicked;
+    }
+    /* WHATSAPP */
+    .whatsapp-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 100px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50px;
+        background: #25D366;
+        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+    }
+    #whatsapp-logo {
+        color: #FFF;
+        font-size: 3rem;
+    }
+    .whatsapp-btn:active {
+        animation-duration: 5s;
+        animation-name: clicked;
+    }
+
+    @keyframes clicked {
+        1% {
+            width: 65px;
+            height: 65px;
+        }
+        100% {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    /*
+        RRSS   
+            */
+}

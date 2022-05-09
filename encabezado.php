@@ -5,13 +5,16 @@
             <img class="main-logo" src="img/logo.png" alt="Logo de la empresa" loading="lazy"/>
         </a>
         <!-- Collapse Menu -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PSNavbar" aria-controls="PSNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#PSNavbar" aria-controls="PSNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon custom-toggler"></span>
         </button>
 
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="PSNavbar">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a tabindex="-1" id="txt-home" class="myNav nav-link text-white" href="#">HOME</a>
+                </li>
                 <li class="nav-item">
                     <a tabindex="-1" id="txt-about" class="myNav nav-link text-white" href="#">ABOUT</a>
                 </li>

@@ -1,4 +1,6 @@
 document.querySelector('#togBtn').addEventListener('input', (event) => {
+    let home = document.querySelector('#txt-home');
+    home.textContent = data_home[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let about = document.querySelector('#txt-about');
     about.textContent = data_about[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let services = document.querySelector('#txt-services');
@@ -21,6 +23,14 @@ var data_slider = {
      
 }
 
+var data_home = {
+    "english": {
+        "title": "HOME"
+    },
+    "spanish": {
+        "title": "INICIO"
+    }
+}
 var data_about = {
     "english": {
         "title": "ABOUT"
