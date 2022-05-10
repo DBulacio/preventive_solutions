@@ -12,6 +12,7 @@ body {
             */
 .navbar {
     background-color: #fff;
+    display: block;
 }
 .menu {
     margin-left: 10px;
@@ -123,6 +124,12 @@ body {
     background-color: rgba(7, 94, 84, 0.5);
     color: #fff !important;
     transform: scale(1.05);
+}
+.instagram-btn {
+    display: none;
+}
+.whatsapp-btn {
+    display: none;
 }
 .redes:hover {
     animation-duration: 5s;
@@ -310,3 +317,10 @@ input:checked+.slider .off {
         RRSS   
             */
 }
+
+
+
+
+
+
+/********************************** MAIN **********************************/

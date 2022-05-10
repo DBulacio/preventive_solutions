@@ -12,23 +12,14 @@
 </head>
 <body>
     <?php include 'encabezado.php'; ?>
-        <!--
-    <nav>
-        <header>
-            <img class="main-logo" src="img/logo.png" alt="Logo de la empresa">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-            <button>Contact</button>
-        </header>
-    </nav> 
     <main>
-        <section class="presentacion">
+        <img class="img-fluid main-img" src="img/home_repair_2.jpg" alt="">
+        <section id="main" class="container">
             <h1>Empresa!</h1>
             <p>Slogan! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae velit quisquam ipsam ad.</p>
             <button>Contact</button>
         </section>
+    </main>
         <section class="about">
             <h2>Somos una empresa!</h2>
         </section>
@@ -37,14 +28,12 @@
             <h3>Y esto</h3>
             <h3>Y esto!</h3>
         </section>
-    </main>
     <footer>
         <a href="#">Instagram</a>
         <a href="#">Facebook</a>
         <a href="#">Linkedin</a>
-        <p>Diseñado por Daniel Bulacio &copy; 2022</p>
+        <small>Diseñado por Daniel Bulacio &copy; 2022</small>
     </footer>
-    -->
 
 <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=1(786)7191538&text=Hello!%20I'd%20like%20some%20information%20please." target="_blank"><i class="fab fa-whatsapp" id="whatsapp-logo"></i></a></button>
 <button class="instagram-btn"><a href="https://www.instagram.com/preventivesolutionsmiami/" target="_blank"><i class="fab fa-instagram" id="instagram-logo"></i></a></button>

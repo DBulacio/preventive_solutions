@@ -8,3 +8,7 @@ www.preventivesolutionsmiami.com
 
 EJEMPLO:
 https://www.arreglamicasa.com.ar/
+
+COLORES:
+    - celeste: rgba(100, 197, 224, 1)
+    - naranja: 
