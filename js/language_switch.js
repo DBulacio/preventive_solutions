@@ -10,6 +10,11 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
 
     let slider = document.querySelector('.slider');
     slider.style = data_slider[event.currentTarget.checked ? 'spanish' : 'english'].cssText;
+
+    let slogan = document.querySelector('#txt-slogan');
+    slogan.textContent = data_slogan[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let txtContactBtn = document.querySelector('#txt-contact-btn');
+    txtContactBtn.textContent = data_txtContactBtn[event.currentTarget.checked ? 'spanish' : 'english'].title;
 });
 
 // USA vs SPANISH FLAG
@@ -53,5 +58,22 @@ var data_contact = {
     },
     "spanish": {
         "title": "CONTACTO"
+    }
+}
+
+var data_slogan = {
+    "english": {
+        "title": "You want it fixed? We'll take care of it! Just let us know."
+    },
+    "spanish": {
+        "title": "¿Querés arreglarlo? Nosotros nos encargamos! Solo contactanos."
+    }
+}
+var data_txtContactBtn = {
+    "english": {
+        "title": "Contact us!"
+    },
+    "spanish": {
+        "title": "Contactanos!"
     }
 }

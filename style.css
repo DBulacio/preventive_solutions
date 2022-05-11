@@ -3,9 +3,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #eee !important;
 }
-.main-logo {
-    width: 8rem;
-}
 
 /*
     NAVBAR
@@ -257,6 +254,12 @@ input:checked+.slider .off {
     .hide-on-mobile {
         display: none;
     }
+    .main-text {
+        top: 60% !important;
+    }
+    .main-title {
+        font-size: 2rem !important;
+    }
     /*
         RRSS   
             */
@@ -324,3 +327,78 @@ input:checked+.slider .off {
 
 
 /********************************** MAIN **********************************/
+.home {
+    position: relative;
+    text-align: center;
+}
+.lead {
+    color: #fff;
+    filter: drop-shadow(2px 2px rgba(0,0,0,0.4));
+}
+.main-logo {
+    width: 8rem;
+}
+.main-img {
+    width: 100%;
+}
+.main-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    animation: title-anim 8s linear infinite;
+    background: -webkit-linear-gradient(45deg, #2421e2, #00c8ff 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px rgba(0,0,0,0.4));
+}
+@keyframes title-anim {
+    0% {
+        background: -webkit-linear-gradient(45deg, #2421e2, #00c8ff 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    25% {
+        background: -webkit-linear-gradient(45deg, #c01246, #ff23e2 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: -webkit-linear-gradient(45deg, #ff5100, #ffae00 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } 
+    75% {
+        background: -webkit-linear-gradient(45deg, #15942a, #73ff00 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+#contact-btn {
+    filter: drop-shadow(2px 2px rgba(0,0,0,0.4));
+    animation: contact-btn-anim 1s linear infinite;
+}
+@keyframes contact-btn-anim {
+    0% {
+        transform: rotateX(0);
+    }
+    10% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotateX(0);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    40% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(0);        
+    }
+}
