@@ -14,7 +14,7 @@
     <?php include 'encabezado.php'; ?>
     <main>
         <section class="home">
-            <img class="img-fluid main-img" src="img/home_repair_2.jpg" alt="Picture of a man working at a house">
+            <img class="img-fluid main-img" src="img/home_repair_3.jpg" alt="Picture of a man working at a house">
             <div class="main-text">
                 <h1 class="main-title">Preventive Solutions Miami</h1>
                 <p class="lead hide-on-mobile" id="txt-slogan">You want it fixed? We'll take care of it! Just let us know.</p>
@@ -22,9 +22,27 @@
             </div>
         </section>
     </main>
-        <section class="about">
-            <h2>Somos una empresa!</h2>
-        </section>
+    <section class="services container">
+        <h2 class="services-title">Our most requested services</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-4">
+                <img class="services-img" src="img/services/air-conditioner.png" alt="">
+                <h3 class="services-specific">Air Conditioner Repair</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4">
+                <img class="services-img" src="img/services/paint-roller.png" alt="">
+                <h3 class="services-specific">Air Conditioner Repair</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4">
+                <img class="services-img" src="img/services/plug.png" alt="">
+                <h3 class="services-specific">Air Conditioner Repair</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+        </div>
+    </section>
+    <!-- 
         <section class="servicios">
             <h3>Hacemos esto</h3>
             <h3>Y esto</h3>
@@ -36,6 +54,7 @@
         <a href="#">Linkedin</a>
         <small>Diseñado por Daniel Bulacio &copy; 2022</small>
     </footer>
+    -->
 
 <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=1(786)7191538&text=Hello!%20I'd%20like%20some%20information%20please." target="_blank"><i class="fab fa-whatsapp" id="whatsapp-logo"></i></a></button>
 <button class="instagram-btn"><a href="https://www.instagram.com/preventivesolutionsmiami/" target="_blank"><i class="fab fa-instagram" id="instagram-logo"></i></a></button>
