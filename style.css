@@ -411,11 +411,15 @@ input:checked+.slider .off {
 
 /********************************** SERVICES **********************************/
 .services {
-    margin: 3rem 0;
+    margin: 2rem 0;
+}
+.services-group {
+    margin-bottom: 1.5rem;
 }
 .services-title {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 .services-img {
     display: block;
@@ -428,5 +432,36 @@ input:checked+.slider .off {
 }
 .services-explanation {
     text-align: center;
+}
+.ball {
+    position: relative;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50px;
+    left: 15%;
+    background-color:blue;
+    animation: ball-anim 3s none infinite;
+}
+
+@keyframes ball-anim {
+    25% {
+        background-color: orange;
+    }
+    33% {
+        width: 2rem;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        left: 85%;
+        width: .5rem;
+        background-color: transparent;
+    }
 }
 /********************************** SERVICES **********************************/

@@ -24,18 +24,19 @@
     </main>
     <section class="services container">
         <h2 class="services-title">Our most requested services</h2>
+        <div class="ball"></div>
         <div class="row justify-content-between">
-            <div class="col-md-4">
+            <div class="col-md-4 services-group">
                 <img class="services-img" src="img/services/air-conditioner.png" alt="">
                 <h3 class="services-specific">Air Conditioner Repair</h3>
                 <p class="services-explanation">we do bla this bla that and everything else</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 services-group">
                 <img class="services-img" src="img/services/paint-roller.png" alt="">
                 <h3 class="services-specific">Air Conditioner Repair</h3>
                 <p class="services-explanation">we do bla this bla that and everything else</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 services-group">
                 <img class="services-img" src="img/services/plug.png" alt="">
                 <h3 class="services-specific">Air Conditioner Repair</h3>
                 <p class="services-explanation">we do bla this bla that and everything else</p>
