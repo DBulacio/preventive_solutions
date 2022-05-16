@@ -22,7 +22,8 @@
             </div>
         </section>
     </main>
-    <section class="services container">
+
+    <section class="services">
         <h2 class="services-title">Our most requested services</h2>
         <div class="ball"></div>
         <div class="row justify-content-between">
@@ -43,19 +44,58 @@
             </div>
         </div>
     </section>
-    <!-- 
-        <section class="servicios">
-            <h3>Hacemos esto</h3>
-            <h3>Y esto</h3>
-            <h3>Y esto!</h3>
-        </section>
-    <footer>
+    
+    <section class="contact">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Let us know what you need</h4>
+                <p>Adjuntanos imágenes de referencia sobre dónde querés realizar el trabajo y completá tus datos de contacto.</p>
+                <h4>Hire us for the job</h4>
+                <p>En 24hs el tecnico que selecciones se va a presentar en tu domicilio en el turno pactado</p>
+            </div>
+            <div class="col-md-8 contact-form">
+                <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="admin_actualizar.php" accept-charset="utf-8" method="POST">
+                    <!-- NOMBRE -->
+                    <div class="md-form">
+                        <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control text-white" required>
+                        <label class="text-white" for="nombre">NOMBRE</label>
+                    </div>
+                    <!-- EMAIL -->
+                    <div class="md-form">
+                        <input type="email" id="email" name="email" maxlength="30" class="form-control text-white" required>
+                        <label class="text-white" for="email">E-MAIL</label>
+                    </div>
+                    <!-- SERVICIO -->
+                    <div class="md-form">
+                        <select class="browser-default custom-select" id="servicio_que_me_interesa" name="servicio_que_me_interesa">
+                            <option value="0" disabled selected>ESTOY BUSCANDO...</option>
+                            <option value="1">Servicio 1</option>
+                            <option value="1">Servicio 1</option>
+                            <option value="1">Servicio 1</option>
+                            <option value="1">Servicio 1</option>
+                            <option value="1">Servicio 1</option>
+                            <option value="1">Servicio 1</option>
+                        </select>
+                    </div>
+                    <br>
+                    <!-- COMENTARIO -->
+                    <div class="md-form">
+                        <textarea class="form-control" id="comentario" rows="3"></textarea>
+                        <label class="text-white" for="comentario">COMENTARIO</label>
+                    </div>
+                    <br>
+                    <button type='submit' id='boton' class='btn btn-primary btn-block'>ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
+        <a href="#">GitHub</a>
         <a href="#">Linkedin</a>
         <small>Diseñado por Daniel Bulacio &copy; 2022</small>
     </footer>
-    -->
 
 <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=1(786)7191538&text=Hello!%20I'd%20like%20some%20information%20please." target="_blank"><i class="fab fa-whatsapp" id="whatsapp-logo"></i></a></button>
 <button class="instagram-btn"><a href="https://www.instagram.com/preventivesolutionsmiami/" target="_blank"><i class="fab fa-instagram" id="instagram-logo"></i></a></button>

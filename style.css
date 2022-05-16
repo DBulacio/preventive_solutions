@@ -411,7 +411,7 @@ input:checked+.slider .off {
 
 /********************************** SERVICES **********************************/
 .services {
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 .services-group {
     margin-bottom: 1.5rem;
@@ -465,3 +465,23 @@ input:checked+.slider .off {
     }
 }
 /********************************** SERVICES **********************************/
+
+/********************************** CONTACT **********************************/
+.contact {
+    background-color: #64c5e0;
+}
+.contact-form {
+    background-color: #68b42d;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    border-radius: 20px;
+}
+/********************************** CONTACT **********************************/
+
+/********************************** FOOTER **********************************/
+.footer {
+    background-color: #ef7814;
+    text-align: center;
+}
+/********************************** FOOTER **********************************/
