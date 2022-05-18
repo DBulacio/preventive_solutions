@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #eee !important;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 }
 
 /*
@@ -108,12 +109,6 @@ body {
 /* especifico de cada nav-link. Cada uno tiene un color del logo */
 #instagram:hover  {
     color: #E1306C !important;
-}
-#facebook:hover  {
-    color: #4267B2 !important;
-}
-#twitter:hover  {
-    color: #1DA1F2 !important;
 }
 #whatsapp {
     border: 2px solid #25D366;
@@ -234,103 +229,6 @@ input:checked+.slider .off {
 *   SWITCH
 */
 
-
-/****
-    MEDIA QUERIES 
-                 ****/
-@media (max-width: 1100px) {
-    .hide-text-on-mobile {
-        display: none;
-    }
-    #whatsapp {
-        border: none;
-        background-color: transparent !important;        
-    }
-    #whatsapp:hover {
-        animation-duration: 5s;
-        animation-name: redes-anim;
-    }
-}
-@media (max-width: 992px) {
-    .hide-on-mobile {
-        display: none;
-    }
-    .main-text {
-        top: 50% !important;
-    }
-    .main-title {
-        font-size: 2.3rem !important;
-    }
-    .services-img {
-        width: 100px !important;
-        height: 100px !important;
-    }
-    /*
-        RRSS   
-            */
-    /* INSTAGRAM */
-    .instagram-btn {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 70px;
-        height: 70px;
-        border: none;
-        border-radius: 50px;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
-        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
-    }
-    #instagram-logo {
-        color: #FFF;
-        font-size: 3rem;
-    }
-    .instagram-btn:active {
-        animation-duration: 5s;
-        animation-name: clicked;
-    }
-    /* WHATSAPP */
-    .whatsapp-btn {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        right: 100px;
-        width: 70px;
-        height: 70px;
-        border: none;
-        border-radius: 50px;
-        background: #25D366;
-        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
-    }
-    #whatsapp-logo {
-        color: #FFF;
-        font-size: 3rem;
-    }
-    .whatsapp-btn:active {
-        animation-duration: 5s;
-        animation-name: clicked;
-    }
-
-    @keyframes clicked {
-        1% {
-            width: 65px;
-            height: 65px;
-        }
-        100% {
-            width: 70px;
-            height: 70px;
-        }
-    }
-    /*
-        RRSS   
-            */
-}
-
-
-
-
-
-
 /********************************** MAIN **********************************/
 .home {
     position: relative;
@@ -417,15 +315,18 @@ input:checked+.slider .off {
     margin-bottom: 1.5rem;
 }
 .services-title {
-    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3rem !important;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 0.5rem;
 }
 .services-img {
     display: block;
     margin: auto;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
 }
 .services-specific {
     text-align: center;
@@ -436,7 +337,7 @@ input:checked+.slider .off {
 .ball {
     position: relative;
     margin-top: 0rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: .5rem;
     height: .5rem;
     border-radius: 50px;
@@ -468,20 +369,119 @@ input:checked+.slider .off {
 
 /********************************** CONTACT **********************************/
 .contact {
-    background-color: #64c5e0;
+    background-color: #58ACC4;
 }
-.contact-form {
-    background-color: #68b42d;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    border-radius: 20px;
+.contact-txt {
+    margin: auto;
 }
 /********************************** CONTACT **********************************/
 
 /********************************** FOOTER **********************************/
-.footer {
-    background-color: #ef7814;
+footer {
+    padding: 2rem;
+    background-color: #4B94A8;
+    color: #fff;
     text-align: center;
 }
+footer a {
+    color: #fff;
+}
 /********************************** FOOTER **********************************/
+
+/****
+    MEDIA QUERIES 
+                 ****/
+    @media (max-width: 1100px) {
+    .hide-text-on-mobile {
+        display: none;
+    }
+    #whatsapp {
+        border: none;
+        background-color: transparent !important;        
+    }
+    #whatsapp:hover {
+        animation-duration: 5s;
+        animation-name: redes-anim;
+    }
+}
+@media (max-width: 992px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .main-text {
+        top: 50% !important;
+    }
+    .main-title {
+        font-size: 2.3rem !important;
+    }
+    .services-img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .contact-txt {
+        margin-top: 1rem !important;
+        text-align: center;
+    }
+    .contact-form {
+        margin-top: -2rem;
+    }
+    /*
+        RRSS   
+            */
+    /* INSTAGRAM */
+    .instagram-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50px;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+    }
+    #instagram-logo {
+        color: #FFF;
+        font-size: 3rem;
+    }
+    .instagram-btn:active {
+        animation-duration: 5s;
+        animation-name: clicked;
+    }
+    /* WHATSAPP */
+    .whatsapp-btn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 100px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50px;
+        background: #25D366;
+        box-shadow: 0px 5px 1px rgba(0,0,0,.5);
+    }
+    #whatsapp-logo {
+        color: #FFF;
+        font-size: 3rem;
+    }
+    .whatsapp-btn:active {
+        animation-duration: 5s;
+        animation-name: clicked;
+    }
+
+    @keyframes clicked {
+        1% {
+            width: 65px;
+            height: 65px;
+        }
+        100% {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    /*
+        RRSS   
+            */
+}

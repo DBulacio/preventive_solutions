@@ -36,16 +36,6 @@
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
-                <li class="menu">
-                    <a tabindex="-1" class="nav-link redes" id="facebook" href="#" rel="nofollow" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a tabindex="-1" class="nav-link redes" id="twitter" href="#" rel="nofollow" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
             </ul>
 
             <ul class="navbar-nav">
