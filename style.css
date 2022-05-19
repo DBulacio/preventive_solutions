@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-body {
-    width: 100%;
+body, html {
+    width: 100vw;
     font-family: 'Ubuntu', sans-serif;
     background-color: #eee !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /*
@@ -377,6 +377,14 @@ input:checked+.slider .off {
 .fa-check-circle {
     color: #c01246 !important;
 }
+.contact-txt > p {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.contact-txt > h4 {
+    padding-left: 1.5rem;
+}
 /********************************** CONTACT **********************************/
 
 /********************************** FOOTER **********************************/
@@ -397,7 +405,7 @@ footer a {
 /****
     MEDIA QUERIES 
                  ****/
-    @media (max-width: 1100px) {
+@media (max-width: 1100px) {
     .hide-text-on-mobile {
         display: none;
     }
@@ -410,6 +418,7 @@ footer a {
         animation-name: redes-anim;
     }
 }
+
 @media (max-width: 992px) {
     .hide-on-mobile {
         display: none;
@@ -431,6 +440,17 @@ footer a {
     .contact-form {
         margin-top: -2rem;
     }
+    .contact-txt > p {
+        padding: 0rem 1.5rem;
+    }
+    .contact-txt > h4 {
+        font-size: 1.4rem;
+        padding-left: 0;
+        padding-right: 7px;
+    }
+    .main-logo {
+        width: 6rem;
+    }
     /*
         RRSS   
             */
@@ -438,7 +458,7 @@ footer a {
     .instagram-btn {
         display: block;
         position: fixed;
-        bottom: 20px;
+        bottom: 30px;
         right: 20px;
         width: 70px;
         height: 70px;
@@ -459,7 +479,7 @@ footer a {
     .whatsapp-btn {
         display: block;
         position: fixed;
-        bottom: 20px;
+        bottom: 30px;
         right: 100px;
         width: 70px;
         height: 70px;
