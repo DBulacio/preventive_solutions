@@ -34,12 +34,76 @@
             </div>
             <div class="col-md-4 services-group">
                 <img class="services-img" src="img/services/paint-roller.png" alt="">
-                <h3 class="services-specific">Air Conditioner Repair</h3>
+                <h3 class="services-specific">Paint</h3>
                 <p class="services-explanation">we do bla this bla that and everything else</p>
             </div>
             <div class="col-md-4 services-group">
                 <img class="services-img" src="img/services/plug.png" alt="">
-                <h3 class="services-specific">Air Conditioner Repair</h3>
+                <h3 class="services-specific">Electricity</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/idea.png" alt="">
+                <h3 class="services-specific">Lighting Fixtures</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/oven.png" alt="">
+                <h3 class="services-specific">Electrical Appliances for your Kitchen</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/home.png" alt="">
+                <h3 class="services-specific">Electrical Appliances for your Home</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/plumbing.png" alt="">
+                <h3 class="services-specific">Plumbing</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/faucet.png" alt="">
+                <h3 class="services-specific">Plumbing for your Kitchen and Laundry Room</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/toilet.png" alt="">
+                <h3 class="services-specific">plumbing for your bathroom</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/house.png" alt="">
+                <h3 class="services-specific">gas fitter for your home</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/stove.png" alt="">
+                <h3 class="services-specific">gas fitter for your kitchen</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/parquet.png" alt="">
+                <h3 class="services-specific">floating floor and carpets</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/blacksmith.png" alt="">
+                <h3 class="services-specific">blacksmithing</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/decorating.png" alt="">
+                <h3 class="services-specific">furnishing</h3>
+                <p class="services-explanation">we do bla this bla that and everything else</p>
+            </div>
+            <div class="col-md-4 services-group">
+                <img class="services-img" src="img/services/tools.png" alt="">
+                <h3 class="services-specific">small jobs for your home</h3>
                 <p class="services-explanation">we do bla this bla that and everything else</p>
             </div>
         </div>
@@ -47,22 +111,22 @@
     
     <section class="contact">
         <div class="row">
-            <div class="col-md-4">
-                <h4>Let us know what you need</h4>
+            <div class="col-md-4 contact-txt">
+                <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Let us know what you need</span></h4>
                 <p>Adjuntanos imágenes de referencia sobre dónde querés realizar el trabajo y completá tus datos de contacto.</p>
-                <h4>Hire us for the job</h4>
+                <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Hire us for the job</span></h4>
                 <p>En 24hs el tecnico que selecciones se va a presentar en tu domicilio en el turno pactado</p>
             </div>
             <div class="col-md-8 contact-form">
                 <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="cwtgamsty-01/send.php" accept-charset="utf-8" method="POST">
                     <!-- NOMBRE -->
                     <div class="md-form">
-                        <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control text-white" required>
+                        <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control" required>
                         <label class="text-white" for="nombre">NOMBRE</label>
                     </div>
                     <!-- EMAIL -->
                     <div class="md-form">
-                        <input type="email" id="email" name="email" maxlength="30" class="form-control text-white" required>
+                        <input type="email" id="email" name="email" maxlength="30" class="form-control" required>
                         <label class="text-white" for="email">E-MAIL</label>
                     </div>
                     <!-- SERVICIO -->
@@ -96,10 +160,8 @@
     </section>
 
     <footer class="footer">
-        <a href="#">Instagram</a>
-        <a href="#">GitHub</a>
-        <a href="#">Linkedin</a>
-        <small>Diseñado por Daniel Bulacio &copy; 2022</small>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <small> Diseñado por Daniel Bulacio &copy; 2022</small>
     </footer>
 
 <button class="whatsapp-btn"><a href="https://api.whatsapp.com/send?phone=1(786)7191538&text=Hello!%20I'd%20like%20some%20information%20please." target="_blank"><i class="fab fa-whatsapp" id="whatsapp-logo"></i></a></button>

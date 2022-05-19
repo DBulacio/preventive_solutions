@@ -10,7 +10,9 @@ EJEMPLO:
 https://www.arreglamicasa.com.ar/
 
 COLORES:
-    - celeste: rgba(100, 197, 224, 1), 64c5e0
-    - naranja: rgba(239, 120, 20, 1), ef7814
-    - verde: rgba(104, 180, 45, 1), 68b42d
-    - rosa: rgba(234, 75, 145, 1), ea4b91
+    - celeste: rgba(100, 197, 224, 1), 64c5e0 (45deg, #2421e2, #00c8ff 70%);
+    - naranja: rgba(239, 120, 20, 1), ef7814 (45deg, #ff5100, #ffae00 80%);
+    - verde: rgba(104, 180, 45, 1), 68b42d (45deg, #15942a, #73ff00 80%);
+    - rosa: rgba(234, 75, 145, 1), ea4b91 (45deg, #c01246, #ff23e2 70%);
+
+    https://fontawesome.com/v5/search?q=chec&m=free
