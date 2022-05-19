@@ -112,9 +112,9 @@
     <section class="contact">
         <div class="row">
             <div class="col-md-4 contact-txt">
-                <h4><i class="far fa-check-circle fa-2x"></i><span class="center-middle"> Let us know what you need</span></h4>
+                <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Let us know what you need</span></h4>
                 <p>Adjuntanos imágenes de referencia sobre dónde querés realizar el trabajo y completá tus datos de contacto.</p>
-                <h4><i class="far fa-check-circle fa-2x"></i><span class="center-middle"> Hire us for the job</span></h4>
+                <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Hire us for the job</span></h4>
                 <p>En 24hs el tecnico que selecciones se va a presentar en tu domicilio en el turno pactado</p>
             </div>
             <div class="col-md-7 contact-form">
