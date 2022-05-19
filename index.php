@@ -54,7 +54,7 @@
                 <p>En 24hs el tecnico que selecciones se va a presentar en tu domicilio en el turno pactado</p>
             </div>
             <div class="col-md-8 contact-form">
-                <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="admin_actualizar.php" accept-charset="utf-8" method="POST">
+                <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="cwtgamsty-01/send.php" accept-charset="utf-8" method="POST">
                     <!-- NOMBRE -->
                     <div class="md-form">
                         <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control text-white" required>
@@ -76,6 +76,11 @@
                             <option value="1">Servicio 1</option>
                             <option value="1">Servicio 1</option>
                         </select>
+                    </div>
+                    <br>
+                    <!-- IMAGEN -->
+                    <div class="md-form">
+                        <input type="file" accept="image/*,.pdf">
                     </div>
                     <br>
                     <!-- COMENTARIO -->
