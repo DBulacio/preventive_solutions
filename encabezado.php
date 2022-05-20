@@ -13,16 +13,16 @@
         <div class="collapse navbar-collapse" id="PSNavbar"> 
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a tabindex="-1" id="txt-home" class="myNav nav-link text-white" href="#">HOME</a>
+                    <a tabindex="-1" id="txt-home" class="myNav nav-link text-white" href="#home">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a tabindex="-1" id="txt-about" class="myNav nav-link text-white" href="#">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a tabindex="-1" id="txt-services" class="myNav nav-link text-white" href="#" target="_self">SERVICES</a>
+                    <a tabindex="-1" id="txt-services" class="myNav nav-link text-white" href="#services" target="_self">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                    <a tabindex="-1" id="txt-contact" class="myNav nav-link text-white" href="#" target="_self">CONTACT</a>
+                    <a tabindex="-1" id="txt-contact" class="myNav nav-link text-white" href="#contact" target="_self">CONTACT</a>
                 </li>
             </ul>
 

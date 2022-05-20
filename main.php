@@ -1,4 +1,4 @@
-<main class="home">
+<main class="home" id="home">
     <img class="img-fluid main-img" src="img/home_repair_3.jpg" alt="Picture of a man working at a house">
     <div class="main-text">
         <h1 class="main-title">Preventive Solutions Miami</h1>

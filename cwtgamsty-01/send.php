@@ -4,71 +4,79 @@ if(isset($_POST['submit'])) {
     exit;
 }
 
-$name = $_POST['nombre'];
+$name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$message = $_POST['comentario'];
-file();
+if(isset($_POST['message'])) {
+    $message = "Here is the message:\n".$_POST['message'];
+} else {
+    $message = "There is no message!";
+}
 
 if(empty($name) || empty($visitor_email)) {
     echo "Name and email are mandatory!";
     exit;
 }
 
+$requested_service = find_requested_service($_POST['requested_service']);
+
 $my_email = "db2166419@gmail.com";
-$email_subject = "New mail from ".$name;
+$email_subject = "New message from ".$name;
 $email_body = "You have received a new message from $name.\n".
-    "email address: $visitor_email\n".
-    "Here is the message:\n $message";
+    "• E-Mail address: $visitor_email\n".
+    "• Requested Service: $requested_service\n".
+    "• $message";
 
 $to = "db2166419@gmail.com";
 $headers = "From: $visitor_email\r\n";
 
-mail($to, $email_subject, $email_body, $headers);
+if(mail($to, $email_subject, $email_body, $headers)) {
+    echo'<script type="text/javascript">
+    alert("Message send! We will get in touch soon!");
+    window.location.href="../index.php";
+    </script>';
+} else {
+    echo'<script type="text/javascript">
+    alert("There was an error! Try again later.");
+    window.location.href="../index.php";
+    </script>';
+}
 
-function file() {
-    /*
-    The code above is getting the different attributes of the uploaded file from the $_FILES[] array.
-    */
-    $name_of_uploaded_file =
-    basename($_FILES['uploaded_file']['name']);
-
-    //get the file extension of the file
-    $type_of_uploaded_file =
-        substr($name_of_uploaded_file,
-        strrpos($name_of_uploaded_file, '.') + 1);
-
-    $size_of_uploaded_file =
-        $_FILES["uploaded_file"]["size"]/1024;//size in KBs
-
-    /*
-    In the code below, we are validating the file size and type. We have the maximum allowed file ($max_allowed_file_size) size set to 100KB. The $allowed_extensions array contains the file extensions of all allowed file types. The validation code checks to see whether the file extension matches any of the extensions in the $allowed_extensions array.
-
-    If there are errors found in the validation, the error is displayed. Else we proceed with sending the email.
-    */
-    //Settings
-    $max_allowed_file_size = 100; // size in KB
-    $allowed_extensions = array("jpg", "jpeg", "gif", "bmp");
-
-    //Validations
-    if($size_of_uploaded_file > $max_allowed_file_size )
-    {
-    $errors .= "\n Size of file should be less than $max_allowed_file_size";
-    }
-
-    //------ Validate the file extension -----
-    $allowed_ext = false;
-    for($i=0; $i<sizeof($allowed_extensions); $i++)
-    {
-    if(strcasecmp($allowed_extensions[$i],$type_of_uploaded_file) == 0)
-    {
-        $allowed_ext = true;
-    }
-    }
-
-    if(!$allowed_ext)
-    {
-    $errors .= "\n The uploaded file is not supported file type. ".
-    " Only the following file types are supported: ".implode(',',$allowed_extensions);
+function find_requested_service($s) {
+    switch($s) {
+        case 1:
+            return "Air Conditioner Repair";
+        case 2:
+            return "Paint";
+        case 3:
+            return "Electricity";
+        case 4:
+            return "Lighting Fixtures";
+        case 5:
+            return "Electrical Appliances for your Kitchen";
+        case 6:
+            return "Electrical Appliances for your Home";
+        case 7:
+            return "Plumbing";
+        case 8:
+            return "Plumbing for your Kitchen and Laundry Room";
+        case 9:
+            return "Plumbing for your bathroom";
+        case 10:
+            return "Gas fitter for your home";
+        case 11:
+            return "Gas fitter for your kitchen";
+        case 12:
+            return "Floating floor and carpets";
+        case 13:
+            return "Blacksmithing";
+        case 14:
+            return "Furnishing";
+        case 15:
+            return "Small jobs for your home";
+        case 16:
+            return "Other";
+        default:
+            return "No Service Selected";
     }
 }
 ?>

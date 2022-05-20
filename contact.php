@@ -1,17 +1,17 @@
-<section class="contact">
+<section class="contact" id="contact">
     <div class="row">
         <div class="col-md-4 contact-txt">
             <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Let us know what you need</span></h4>
-            <p>Adjuntanos imágenes de referencia sobre dónde querés realizar el trabajo y completá tus datos de contacto.</p>
+            <p>Write a detailed explanation of the job, then fill your contact info.</p>
             <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Hire us for the job</span></h4>
-            <p>En 24hs el tecnico que selecciones se va a presentar en tu domicilio en el turno pactado</p>
+            <p>We'll get in touch as soon as possible with a budget.</p>
         </div>
         <div class="col-md-8 contact-form">
             <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="cwtgamsty-01/send.php" accept-charset="utf-8" method="POST">
                 <!-- NOMBRE -->
                 <div class="md-form">
-                    <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control" required>
-                    <label class="text-white" for="nombre">NOMBRE</label>
+                    <input type="text" id="name" name="name" maxlength="30" class="form-control" required>
+                    <label class="text-white" for="name">NAME</label>
                 </div>
                 <!-- EMAIL -->
                 <div class="md-form">
@@ -20,14 +20,24 @@
                 </div>
                 <!-- SERVICIO -->
                 <div class="md-form">
-                    <select class="browser-default custom-select" id="servicio_que_me_interesa" name="servicio_que_me_interesa">
-                        <option value="0" disabled selected>ESTOY BUSCANDO...</option>
-                        <option value="1">Servicio 1</option>
-                        <option value="1">Servicio 1</option>
-                        <option value="1">Servicio 1</option>
-                        <option value="1">Servicio 1</option>
-                        <option value="1">Servicio 1</option>
-                        <option value="1">Servicio 1</option>
+                    <select class="browser-default custom-select" id="requested_service" name="requested_service" required>
+                        <option value="0" disabled selected>I'M LOOKING FOR...</option>
+                        <option value="1">Air Conditioner Repair</option>
+                        <option value="2">Paint</option>
+                        <option value="3">Electricity</option>
+                        <option value="4">Lighting Fixtures</option>
+                        <option value="5">Electrical Appliances for your Kitchen</option>
+                        <option value="6">Electrical Appliances for your Home</option>
+                        <option value="7">Plumbing</option>
+                        <option value="8">Plumbing for your Kitchen and Laundry Room</option>
+                        <option value="9">Plumbing for your bathroom</option>
+                        <option value="10">Gas fitter for your home</option>
+                        <option value="11">Gas fitter for your kitchen</option>
+                        <option value="12">Floating floor and carpets</option>
+                        <option value="13">Blacksmithing</option>
+                        <option value="14">Furnishing</option>
+                        <option value="15">Small jobs for your home</option>
+                        <option value="16">Other (Especify)</option>
                     </select>
                 </div>
                 <br>
@@ -38,11 +48,11 @@
                 <br>-->
                 <!-- COMENTARIO -->
                 <div class="md-form">
-                    <textarea class="form-control" name="comentario" id="comentario" rows="3"></textarea>
-                    <label class="text-white" for="comentario">COMENTARIO</label>
+                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                    <label class="text-white" for="message">MESSAGE</label>
                 </div>
                 <br>
-                <button type='submit' id='boton' class='btn btn-primary btn-block'>ENVIAR</button>
+                <button type='submit' id='boton' class='btn btn-primary btn-block'>SEND</button>
             </form>
         </div>
     </div>
