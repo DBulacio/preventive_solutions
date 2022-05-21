@@ -1,10 +1,10 @@
 <section class="contact" id="contact">
     <div class="row">
         <div class="col-md-4 contact-txt">
-            <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Let us know what you need</span></h4>
-            <p>Write a detailed explanation of the job, then fill your contact info.</p>
-            <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle"> Hire us for the job</span></h4>
-            <p>We'll get in touch as soon as possible with a budget.</p>
+            <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle" id="contacttitle1"> Let us know what you need</span></h4>
+            <p id="contactp1">Write a detailed explanation of the job, then fill your contact info.</p>
+            <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle" id="contacttitle2"> Hire us for the job</span></h4>
+            <p id="contactp2">We'll get in touch as soon as possible with a budget.</p>
         </div>
         <div class="col-md-8 contact-form">
             <form class="bg-secondary-color-dark rounded shadow-5-strong p-5" action="cwtgamsty-01/send.php" accept-charset="utf-8" method="POST">
