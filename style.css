@@ -485,6 +485,9 @@ footer a {
         font-size: 1.5rem !important;
         margin: 1.5rem !important;
     }
+    .contact-main-title {
+        font-size: 2rem;
+    }
     .contact-txt {
         margin-top: 1rem !important;
         text-align: center;
