@@ -1,4 +1,6 @@
 <section class="contact" id="contact">
+    <h4 class="contact-main-title" id="contact-main-title">Get in touch!</h4>
+    <div class="ball"></div>
     <div class="row">
         <div class="col-md-4 contact-txt">
             <h4><i class="far fa-check-circle fa-lg"></i><span class="center-middle" id="contacttitle1"> Let us know what you need</span></h4>

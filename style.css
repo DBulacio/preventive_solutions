@@ -17,6 +17,8 @@ a {
 .navbar {
     background-color: #fff;
     display: block;
+    position: fixed;
+    width: 100%;
 }
 .menu {
     margin-left: 10px;
@@ -238,6 +240,7 @@ input:checked+.slider .off {
 .home {
     position: relative;
     text-align: center;
+    margin-top: 6.5rem;
 }
 .lead {
     color: #fff;
@@ -313,9 +316,22 @@ input:checked+.slider .off {
 }
 /********************************** MAIN **********************************/
 
+/********************************** ABOUT **********************************/
+.about {
+    background-color: #ef7814;
+    padding: 1rem 1rem .2rem 0.5rem;
+    margin: 0 .5rem 0 0;
+}
+.about > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+/********************************** ABOUT **********************************/
+
 /********************************** SERVICES **********************************/
 .services {
-    margin: 2rem auto;
+    margin: 2rem 2rem 2rem .8rem;
 }
 .services-group {
     margin-bottom: 1.5rem;
@@ -342,7 +358,7 @@ input:checked+.slider .off {
     margin: 1rem;
     text-transform: lowercase;
 }
-.ball {
+.services > .ball {
     position: relative;
     margin-top: 0rem;
     margin-bottom: 2rem;
@@ -378,6 +394,24 @@ input:checked+.slider .off {
 /********************************** CONTACT **********************************/
 .contact {
     background-color: #58ACC4;
+}
+.contact-main-title {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+.contact-main-title::after, .contact-main-title::before {
+    content: " — ";
+    color: #c01246;
+}
+.contact > .ball {
+    position: relative;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50px;
+    left: 15%;
+    background-color:blue;
+    animation: ball-anim 3s none infinite;
 }
 .contact-txt {
     margin: auto;
@@ -431,11 +465,17 @@ footer a {
     .hide-on-mobile {
         display: none;
     }
+    .home {
+        margin-top: 6.5rem;
+    }
     .main-text {
         top: 50% !important;
     }
     .main-title {
         font-size: 2.3rem !important;
+    }
+    .services {
+        margin: 2rem 1rem 2rem .8rem;
     }
     .services-img {
         width: 80px !important;

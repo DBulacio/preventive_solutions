@@ -16,7 +16,7 @@
                     <a tabindex="-1" id="txt-home" class="myNav nav-link text-white" href="#home">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a tabindex="-1" id="txt-about" class="myNav nav-link text-white" href="#">ABOUT</a>
+                    <a tabindex="-1" id="txt-about" class="myNav nav-link text-white" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item">
                     <a tabindex="-1" id="txt-services" class="myNav nav-link text-white" href="#services" target="_self">SERVICES</a>

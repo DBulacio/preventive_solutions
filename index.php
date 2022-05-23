@@ -14,7 +14,9 @@
     <?php include 'encabezado.php'; ?>
     
     <?php include 'main.php'; ?>
-
+    
+    <?php include 'about.php'; ?>
+    
     <?php include 'services.php'; ?>
     
     <?php include 'contact.php'; ?>

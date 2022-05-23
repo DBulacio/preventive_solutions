@@ -16,6 +16,10 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     let txtContactBtn = document.querySelector('#txt-contact-btn');
     txtContactBtn.textContent = data_txtContactBtn[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
+    /* ABOUT */
+    let about_text = document.querySelector('#about-text');
+    about_text.textContent = data_about_text[event.currentTarget.checked ? 'spanish' : 'english'].title;
+
     /* SERVICIOS */ 
     let s_title = document.querySelector('#services-title');
     s_title.textContent = data_s_title[event.currentTarget.checked ? 'spanish' : 'english'].title;
@@ -84,6 +88,8 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     s15.textContent = data_s15[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
     /* CONTACT */
+    let contactmaintitle = document.querySelector('#contact-main-title');
+    contactmaintitle.textContent = data_contactmaintitle[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let contacttitle1 = document.querySelector('#contacttitle1');
     contacttitle1.textContent = data_contacttitle1[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let contacttitle2 = document.querySelector('#contacttitle2');
@@ -93,6 +99,7 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     let contactp2 = document.querySelector('#contactp2');
     contactp2.textContent = data_contactp2[event.currentTarget.checked ? 'spanish' : 'english'].title;
 });
+
 
 // USA vs SPANISH FLAG
 var data_slider = {
@@ -150,6 +157,15 @@ var data_txtContactBtn = {
     },
     "spanish": {
         "title": "Contactanos!"
+    }
+}
+
+var data_about_text = {
+    "english": {
+        "title": "We take care of the preventive and corrective maintenance of houses, apartments, buildings and common spaces."
+    },
+    "spanish": {
+        "title": "Nos encargamos del mantenimiento preventivo y correctivo de casas, apartamentos, edificios y espacios comunes."
     }
 }
 
@@ -406,6 +422,14 @@ var data_s15 = {
 }
 
 /* CONTACT */
+var data_contactmaintitle = {
+    "english": {
+        "title": "Get in touch!"
+    },
+    "spanish": {
+        "title": "¡Pongase en contacto!"
+    }
+}
 var data_contacttitle1 = {
     "english": {
         "title": " Let us know what you need"
