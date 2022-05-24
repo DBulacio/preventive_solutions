@@ -1,11 +1,11 @@
-<?php 
+<?php
 if(isset($_POST['submit'])) {
     echo "error; you need to submit the form!";
     exit;
 }
 
-$name = $_POST['name'];
 $visitor_email = $_POST['email'];
+$name = $_POST['name'];
 if(isset($_POST['message'])) {
     $message = "Here is the message:\n".$_POST['message'];
 } else {
@@ -19,26 +19,43 @@ if(empty($name) || empty($visitor_email)) {
 
 $requested_service = find_requested_service($_POST['requested_service']);
 
-$my_email = "db2166419@gmail.com";
-$email_subject = "New message from ".$name;
+$subjectMail = "New message from " . $name;
+
 $email_body = "You have received a new message from $name.\n".
     "• E-Mail address: $visitor_email\n".
     "• Requested Service: $requested_service\n".
     "• $message";
 
-$to = "db2166419@gmail.com";
-$headers = "From: $visitor_email\r\n";
+$headers = '';
+$headers .= "Reply-To: ".$visitor_email."\r\n";
+$headers .= "Return-Path: ".$visitor_email."\r\n";
+$headers .= "From: ".$visitor_email."\r\n";
+$headers .= "Organization: Sender Organization\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+$headers .= "X-Priority: 3\r\n";
+$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
 
-if(mail($to, $email_subject, $email_body, $headers)) {
-    echo'<script type="text/javascript">
-    alert("Message send! We will get in touch soon!");
-    window.location.href="../index.php";
-    </script>';
-} else {
-    echo'<script type="text/javascript">
-    alert("There was an error! Try again later.");
-    window.location.href="../index.php";
-    </script>';
+$toMail = "db2166419@gmail.com";
+
+try {
+    if (mail($toMail, $subjectMail, $email_body, $headers)) {
+        $status = 'success';
+        $msg = 'Mail sent successfully.';
+        echo'<script type="text/javascript">
+        alert("Message send! We will get in touch soon!");
+        window.location.href="../index.php";
+        </script>';
+    } else {
+        $status = 'failed';
+        $msg = 'Unable to send mail.';
+        echo'<script type="text/javascript">
+        alert("There was an error! Try again later.");
+        window.location.href="../index.php";
+        </script>';
+    }
+} catch(Exception $e) {
+    $msg = $e->getMessage();
 }
 
 function find_requested_service($s) {
