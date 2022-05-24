@@ -98,8 +98,48 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     contactp1.textContent = data_contactp1[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let contactp2 = document.querySelector('#contactp2');
     contactp2.textContent = data_contactp2[event.currentTarget.checked ? 'spanish' : 'english'].title;
-});
+    let boton = document.querySelector('#boton');
+    boton.textContent = data_boton[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let message = document.querySelector('#contact_msg');
+    message.textContent = data_message[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let name = document.querySelector('#contact_name');
+    name.textContent = data_name[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
+    let cc0 = document.querySelector('#cc0');
+    cc0.textContent = data_cc0[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc1 = document.querySelector('#cc1');
+    cc1.textContent = data_cc1[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc2 = document.querySelector('#cc2');
+    cc2.textContent = data_cc2[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc3 = document.querySelector('#cc3');
+    cc3.textContent = data_cc3[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc4 = document.querySelector('#cc4');
+    cc4.textContent = data_cc4[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc5 = document.querySelector('#cc5');
+    cc5.textContent = data_cc5[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc6 = document.querySelector('#cc6');
+    cc6.textContent = data_cc6[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc7 = document.querySelector('#cc7');
+    cc7.textContent = data_cc7[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc8 = document.querySelector('#cc8');
+    cc8.textContent = data_cc8[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc9 = document.querySelector('#cc9');
+    cc9.textContent = data_cc9[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc10 = document.querySelector('#cc10');
+    cc10.textContent = data_cc10[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc11 = document.querySelector('#cc11');
+    cc11.textContent = data_cc11[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc12 = document.querySelector('#cc12');
+    cc12.textContent = data_cc12[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc13 = document.querySelector('#cc13');
+    cc13.textContent = data_cc13[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc14 = document.querySelector('#cc14');
+    cc14.textContent = data_cc14[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc15 = document.querySelector('#cc15');
+    cc15.textContent = data_cc15[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let cc16 = document.querySelector('#cc16');
+    cc16.textContent = data_cc16[event.currentTarget.checked ? 'spanish' : 'english'].title;
+});
 
 // USA vs SPANISH FLAG
 var data_slider = {
@@ -460,5 +500,167 @@ var data_contactp2 = {
     },
     "spanish": {
         "title": " Nos pondremos en contacto lo antes posible con un presupuesto."
+    }
+}
+var data_boton = {
+    "english": {
+        "title": "SEND"
+    },
+    "spanish": {
+        "title": "ENVIAR"
+    }
+}
+var data_message = {
+    "english": {
+        "title": "MESSAGE"
+    },
+    "spanish": {
+        "title": "MENSAJE"
+    }
+}
+var data_name = {
+    "english": {
+        "title": "NAME"
+    },
+    "spanish": {
+        "title": "NOMBRE"
+    }
+}
+
+
+var data_cc0 = {
+    "english": {
+        "title": "I'M LOOKING FOR..."
+    },
+    "spanish": {
+        "title": "ESTOY BUSCANDO..."
+    }
+}
+var data_cc1 = {
+    "english": {
+        "title": "Air Conditioner Repair"
+    },
+    "spanish": {
+        "title": "Aire Acondicionado Split"
+    }
+}
+var data_cc2 = {
+    "english": {
+        "title": "Paint"
+    },
+    "spanish": {
+        "title": "Pintura"
+    }
+}
+var data_cc3 = {
+    "english": {
+        "title": "Electricity"
+    },
+    "spanish": {
+        "title": "Electricidad"
+    }
+}
+var data_cc4 = {
+    "english": {
+        "title": "Lighting Fixtures"
+    },
+    "spanish": {
+        "title": "Artefactos de Iluminación"
+    }
+}
+var data_cc5 = {
+    "english": {
+        "title": "Electrical Appliances for your Kitchen"
+    },
+    "spanish": {
+        "title": "Artefactos Eléctricos para tu Cocina"
+    }
+}
+var data_cc6 = {
+    "english": {
+        "title": "Electrical Appliances for your Home"
+    },
+    "spanish": {
+        "title": "Artefactos Eléctricos para tu Hogar"
+    }
+}
+var data_cc7 = {
+    "english": {
+        "title": "Plumbing"
+    },
+    "spanish": {
+        "title": "Plomeria"
+    }
+}
+var data_cc8 = {
+    "english": {
+        "title": "Plumbing for your Kitchen and Laundry Room"
+    },
+    "spanish": {
+        "title": "Plomeria para tu Cocina y Lavadero"
+    }
+}
+var data_cc9 = {
+    "english": {
+        "title": "Plumbing for your bathroom"
+    },
+    "spanish": {
+        "title": "Plomeria para tu Baño"
+    }
+}
+var data_cc10 = {
+    "english": {
+        "title": "Gas fitter for your home"
+    },
+    "spanish": {
+        "title": "Gasista para tu Hogar"
+    }
+}
+var data_cc11 = {
+    "english": {
+        "title": "Gas fitter for your kitchen"
+    },
+    "spanish": {
+        "title": "Gasista para tu Cocina"
+    }
+}
+var data_cc12 = {
+    "english": {
+        "title": "Floating floor and carpets"
+    },
+    "spanish": {
+        "title": "Piso Flotante y Alfombras"
+    }
+}
+var data_cc13 = {
+    "english": {
+        "title": "Blacksmithing"
+    },
+    "spanish": {
+        "title": "Herreria"
+    }
+}
+var data_cc14 = {
+    "english": {
+        "title": "Furnishing"
+    },
+    "spanish": {
+        "title": "Amoblamiento"
+    }
+}
+var data_cc15 = {
+    "english": {
+        "title": "Small jobs for your home"
+    },
+    "spanish": {
+        "title": "Pequeños trabajos para tu hogar"
+    }
+}
+var data_cc16 = {
+    "english": {
+        "title": "Other (Especify)"
+    },
+    "spanish": {
+        "title": "Otro (Especifica)"
     }
 }
