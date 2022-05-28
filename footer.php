@@ -4,5 +4,5 @@
     preventivesolutionsmiami@gmail.com <br>
     +1 (786) 719-1538</p>
     <a href="https://github.com/DBulacio"><i class="fab fa-github"></i>
-    <small> Diseñado por Daniel Bulacio &copy; 2022</small></a>
+    <small> Diseñado por DBulacio &copy; 2022</small></a>
 </footer>
