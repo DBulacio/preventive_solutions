@@ -11,6 +11,10 @@ a {
     color: #fff;
 }
 
+.hidden {
+    display: none;
+}
+
 /* AUTO SCROLL ISSUES */
 #home {
     position: absolute;
@@ -370,6 +374,8 @@ input:checked+.slider .off {
 .about-text {
     text-shadow: 3px 3px 20px #000;
     text-align: center;
+    font-size: 1.2rem;
+    padding: 0 3rem 0 3rem;
 }
 /********************************** ABOUT **********************************/
 
@@ -506,6 +512,20 @@ footer a {
 }
 
 @media (max-width: 992px) {
+    /* AUTO SCROLL ISSUES */
+    #home {
+        top: 10px;
+    }
+    #about { 
+        top: 20px;
+    }
+    #services {
+        top: 604px;
+    }
+    #contact {
+        top: 4350px;
+    }
+    /* AUTO SCROLL ISSUES */
     .hide-on-mobile {
         display: none;
     }
@@ -517,6 +537,17 @@ footer a {
     }
     .main-title {
         font-size: 2.3rem !important;
+    }
+    .about-text {
+        text-align: left;
+        font-size: 0.9rem;
+        padding: 0 .5rem 0 1rem;
+    }
+    .about--orange {
+        padding: .5rem 1rem 0 0.5rem;
+    }
+    .about--orange > p, .about--green > p {
+        font-size: 1rem;
     }
     .services {
         margin: 2rem 1rem 2rem .8rem;
