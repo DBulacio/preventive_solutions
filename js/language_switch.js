@@ -17,8 +17,18 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     txtContactBtn.textContent = data_txtContactBtn[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
     /* ABOUT */
-    let about_text = document.querySelector('#about-text');
-    about_text.textContent = data_about_text[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_0 = document.querySelector('#about-text-0');
+    about_text_0.textContent = data_about_text_0[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_1 = document.querySelector('#about-text-1');
+    about_text_1.textContent = data_about_text_1[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_2 = document.querySelector('#about-text-2');
+    about_text_2.textContent = data_about_text_2[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_3 = document.querySelector('#about-text-3');
+    about_text_3.textContent = data_about_text_3[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_4 = document.querySelector('#about-text-4');
+    about_text_4.textContent = data_about_text_4[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_5 = document.querySelector('#about-text-5');
+    about_text_5.textContent = data_about_text_5[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
     /* SERVICIOS */ 
     let s_title = document.querySelector('#services-title');
@@ -200,12 +210,52 @@ var data_txtContactBtn = {
     }
 }
 
-var data_about_text = {
+var data_about_text_0 = {
     "english": {
         "title": "We take care of the preventive and corrective maintenance of houses, apartments, buildings and common spaces."
     },
     "spanish": {
         "title": "Nos encargamos del mantenimiento preventivo y correctivo de casas, apartamentos, edificios y espacios comunes."
+    }
+}
+var data_about_text_1 = {
+    "english": {
+        "title": "WE SOLVE YOUR PROPERTY MAINTENANCE PROBLEMS!"
+    },
+    "spanish": {
+        "title": "RESOLVEMOS LOS PROBLEMAS DE MANTENIMIENTO DE SU PROPIEDAD!"
+    }
+}
+var data_about_text_2 = {
+    "english": {
+        "title": "• We are a property maintenance company in Miami and Florida, with extensive experience and trajectory. We have a professional team and more than 10,000 clients in the United States that endorse us in the market. We take care of the maintenance problems of your property."
+    },
+    "spanish": {
+        "title": "• Somos una empresa de mantenimiento de propiedades en Miami y la Florida, con amplia experiencia y trayectoria. Contamos con un equipo profesional y más de 10.000 clientes en Estados Unidos que nos avalan en el mercado. Nos encargamos de los problemas de mantenimiento de su propiedad."
+    }
+}
+var data_about_text_3 = {
+    "english": {
+        "title": "• Wherever you are in the world, don't worry, we will take care of coordinating everything that is necessary to leave your property in optimal conditions so that you and your tenant are satisfied."
+    },
+    "spanish": {
+        "title": "• Desde el lugar del mundo que se encuentre, no se preocupe que nosotros nos encargaremos de coordinar todo lo que sea necesario para dejar su inmueble en óptimas condiciones para que Ud y su inquilino esten conformes."
+    }
+}
+var data_about_text_4 = {
+    "english": {
+        "title": "• We perform periodic inspections to ensure that everything is in order and to maintain your property."
+    },
+    "spanish": {
+        "title": "• Realizamos inspecciones periódicas para saber que todo está bien y mantener su propiedad."
+    }
+}
+var data_about_text_5 = {
+    "english": {
+        "title": "• We take care of the cleaning for the check-in and check-out of your tenants."
+    },
+    "spanish": {
+        "title": "• Nos encargamos de la limpieza para el check-in y check-out de sus inquilinos."
     }
 }
 

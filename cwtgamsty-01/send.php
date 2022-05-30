@@ -36,7 +36,7 @@ $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
 $headers .= "X-Priority: 3\r\n";
 $headers .= "X-Mailer: PHP". phpversion() ."\r\n";
 
-$toMail = "db2166419@gmail.com";
+$toMail = "preventivesolutionsmiami@gmail.com";
 
 try {
     if (mail($toMail, $subjectMail, $email_body, $headers)) {
