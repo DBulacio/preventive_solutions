@@ -11,6 +11,29 @@ a {
     color: #fff;
 }
 
+/* AUTO SCROLL ISSUES */
+#home {
+    position: absolute;
+    visibility: hidden;
+    top: 10px;
+}
+#about { 
+    position: absolute; 
+    visibility: hidden;
+    top: 790px;
+}
+#services {
+    position: absolute;
+    visibility: hidden;
+    top: 1120px;
+}
+#contact {
+    position: absolute;
+    visibility: hidden;
+    top: 2630px;
+}
+/* AUTO SCROLL ISSUES */
+
 /*
     NAVBAR
             */
@@ -318,14 +341,23 @@ input:checked+.slider .off {
 
 /********************************** ABOUT **********************************/
 .about--orange {
-    padding: .1rem 1rem 0 0.5rem;
+    padding: .5rem 1rem .1rem 0.5rem;
     background-color: #ef7814;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .about--green {
+    margin-top: -1rem;
     padding: .8rem 1rem .1rem 0.5rem;
     background-color: #15942a;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .about {
+    background-image: url("img/about_bg_03.jpg");
+    background-repeat: no-repeat;
     width: 100%;
     padding: 0 1rem 0 0.5rem;
     margin: 0 .5rem 0 0;
@@ -336,6 +368,7 @@ input:checked+.slider .off {
     text-align: center;
 }
 .about-text {
+    text-shadow: 3px 3px 20px #000;
     text-align: center;
 }
 /********************************** ABOUT **********************************/

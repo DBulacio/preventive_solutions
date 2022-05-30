@@ -1,4 +1,5 @@
-<section class="contact" id="contact">
+<span id="contact"></span>
+<section class="contact">
     <h4 class="contact-main-title" id="contact-main-title">Get in touch!</h4>
     <div class="ball"></div>
     <div class="row">
