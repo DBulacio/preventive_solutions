@@ -293,7 +293,7 @@ var data_ss1 = {
         "title": "Air Conditioner Repair"
     },
     "spanish": {
-        "title": "Aire Acondicionado Split"
+        "title": "Reparación e Instalación de Aire Acondicionado"
     }
 }
 var data_ss2 = {
