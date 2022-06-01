@@ -15,7 +15,7 @@
         <p class="about-text" id="about-text-4">• We perform <strong>periodic inspections</strong> to ensure that everything is in order and to maintain your property.</p>
         <p class="about-text" id="about-text-5">• We take care of the cleaning for the check-in and check-out of your tenants.</p>
         <strong><p class="about-text" id="about-text-6">ROUTINE MAINTENANCE:</p></strong>
-        <p class="about-text" id="about-text-7">• Periodic Inspections • Cleaning and Overhaul • Painting and Minor Repairs.s</p>
+        <p class="about-text" id="about-text-7">• Periodic Inspections • Cleaning and Overhaul • Painting and Minor Repairs.</p>
         </div>
         <div class="col-md-5">
             <img class="img-fluid about-img-02 img-thumbnail" src="img/about_01.jpg" alt="">
