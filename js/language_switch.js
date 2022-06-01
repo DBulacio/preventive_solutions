@@ -29,6 +29,10 @@ document.querySelector('#togBtn').addEventListener('input', (event) => {
     about_text_4.textContent = data_about_text_4[event.currentTarget.checked ? 'spanish' : 'english'].title;
     let about_text_5 = document.querySelector('#about-text-5');
     about_text_5.textContent = data_about_text_5[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_6 = document.querySelector('#about-text-6');
+    about_text_6.textContent = data_about_text_6[event.currentTarget.checked ? 'spanish' : 'english'].title;
+    let about_text_7 = document.querySelector('#about-text-7');
+    about_text_7.textContent = data_about_text_7[event.currentTarget.checked ? 'spanish' : 'english'].title;
 
     /* SERVICIOS */ 
     let s_title = document.querySelector('#services-title');
@@ -256,6 +260,22 @@ var data_about_text_5 = {
     },
     "spanish": {
         "title": "• Nos encargamos de la limpieza para el check-in y check-out de sus inquilinos."
+    }
+}
+var data_about_text_6 = {
+    "english": {
+        "title": "ROUTINE MAINTENANCE:"
+    },
+    "spanish": {
+        "title": "MANTENIMIENTO CORRIENTE:"
+    }
+}
+var data_about_text_7 = {
+    "english": {
+        "title": "• Periodic Inspections • Cleaning and Overhaul • Painting and Minor Repairs."
+    },
+    "spanish": {
+        "title": "• Inspecciones Periódicas • Limpieza y Puesta Punto • Pintura y Reparaciones Menores."
     }
 }
 
